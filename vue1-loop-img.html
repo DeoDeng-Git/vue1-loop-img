@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>loop photos with 9 offset</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>This is to loop 9 photos</h1>
+	<p>Use chrome's F12 to resize screen and show mobile effect.</p>
+	<hr>
+	<div id="vuetable" class="gridContent">
+
+	    <div v-for="newpost in newposts | limitBy 9 offSet">
+	      <img :src="newpost.image" :alt="newpost.head" class="one" width="100%">
+	      <h4 class="onet"><a :href="newpost.link">{{newpost.head}}</a></h4>
+	      <span class="two"><small><i> {{newpost.author}} - </i></small> </span> 
+	      <span class="three"> <small>{{newpost.date}} </small></span>
+	      <p class="four">{{newpost.content}}</p>
+	    </div>
+	      
+	    <div>
+	      <p>Read all the <a href="#">Posts</a>. </p>
+	    </div>
+
+	    <div>
+	      <p>Found a <a href="#">Lorem ipsum</a></p>
+	    </div>
+
+	    <div>
+	      <p><i>Latest update</i>: <b>{{newposts[0].date}}</b></p>
+	    </div>
+            
+
+	</div> 
+<script src="vue1.js"></script>
+<script src="posts.js"></script>
+</body>
+</html>
