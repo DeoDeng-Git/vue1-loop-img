@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vue2 Search Blogs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="wrapper.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="page-banner">
+            <h1>Loop all the blogs and add searchable</h1>
+            <p>Use chrome's F12 to resize screen and show mobile effect.</p>
+            <form id="search-books">
+                <input v-model="query" type="text" placeholder="Search blogs..." />
+            </form>
+        </div>
+        <hr>
+        <div id="vuetable" class="gridContent">
+            <div v-for="(newpost, index) in computedList">
+                <img :src="newpost.image" :alt="newpost.head" class="one" width="100%">
+                <h4 class="onet"><a :href="newpost.link">{{newpost.head}}</a></h4>
+                <span class="two"><small><i> {{newpost.author}} - </i></small> </span>
+                <span class="three"> <small>{{newpost.date}} </small></span>
+                <p class="four">{{newpost.content}}</p>
+            </div>
+
+            <div>
+                <p>Read all the <a href="#">Posts</a>. </p>
+            </div>
+            <div>
+                <p>some link <a href="#">Lorem ipsum</a></p>
+            </div>
+            <div>
+                <p><i>Latest update</i>: <b>{{newposts[0].date}}</b></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="computed.js"></script>
+</body>
+
+</html>
