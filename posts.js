@@ -26,14 +26,14 @@ var pageBar = new Vue({
             }, {
                 image: 'http://bulma.io/images/placeholders/640x480.png',
                 link: 'http://www.lipsum.com/',
-                head: 'WhVestibulum at quam malesuadas er?',
+                head: 'WhVestibulum at quam malesuadas ',
                 author: ' Author Name',
                 date: 'Sep 19, 2017',
                 content: 'Quisque egestas gravida metus. Ut velit enim, porta at iaculis nec, pulvinar in mi. Sed tincidunt euismod sagittis. Vestibulum ut cursus turpis. '
             },{
                 image: 'http://bulma.io/images/placeholders/640x480.png',
                 link: 'http://www.lipsum.com/',
-                head: 'DVestibulum at quam malesuada disk',
+                head: 'DVestibulum at quam malesuada ',
                 author: ' Author Name',
                 date: 'May 5, 2017',
                 content: 'Ut euismod congue ultricies. Nullam vel lacus vitae dui tristique sagittis. Nulla finibus tellus ornare gravida congue. Donec non porttitor augue. Suspendisse ullamcorper'
@@ -64,7 +64,7 @@ var pageBar = new Vue({
                 head: 'rhoncus nunc fringilla dapibus',
                 author: ' Author Name',
                 date: 'May 22, 2017',
-                content: 'Nulla vehicula rhoncus nunc fringilla dapibus. Nunc sodales ipsum sem, a pellentesque libero aliquam nec. Quisque et pulvinar mauris, id pretium nisl. Nam quam erat, euismod a rutrum vitae, pretium eu justo.'
+                content: 'Fringilla dapibus. Nunc sodales ipsum sem, aliquam nec. Quisque et pulvinar mauris, id pretium nisl. Nam quam erat, euismod a rutrum vitae, pretium eu justo.'
             },{
                 image: 'http://bulma.io/images/placeholders/640x480.png',
                 link: 'http://www.lipsum.com/',
@@ -92,7 +92,7 @@ var pageBar = new Vue({
                 head: 'Proin condimentum dui ac',
                 author: ' Author Name',
                 date: 'Apr 20, 2017',
-                content: 'Proin condimentum dui ac iaculis dictum. Sed pellentesque diam ut magna efficitur tempus. Maecenas tincidunt lacus quis mauris elementum, ac volutpat arcu tincidunt. Ut sed sem aliquet, iaculis lorem quis, accumsan risus. Pellentesque'
+                content: 'dictum. Sed pellentesque diam ut magna efficitur tempus. Maecenas tincidunt lacus quis mauris elementum, ac volutpat arcu tincidunt. Ut sed sem aliquet, iaculis lorem quis, accumsan risus. Pellentesque'
             }
         ]
     }

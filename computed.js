@@ -26,14 +26,14 @@ var pageBar = new Vue({
         }, {
             image: '640x480.png',
             link: 'http://www.lipsum.com/',
-            head: 'Mauris congue dui et',
+            head: 'Mauris congue dui ',
             author: ' Author Name',
             date: 'July 23, 2017',
             content: 'Mauris congue dui et felis sollicitudin, ac imperdiet dui tristique. Etiam commodo metus augue. Duis in ligula dui.'
         }, {
             image: '640x480.png',
             link: 'http://www.lipsum.com/',
-            head: 'mauris non dapibus porttitor',
+            head: 'mauris  dapibus porttitor',
             author: ' Author Name',
             date: 'June 23, 2017',
             content: 'mauris non dapibus porttitor, quam lacus malesuada purus, a pretium purus sapien vel orci. Nulla facilisi. Nam elementum maximus nisl,'
