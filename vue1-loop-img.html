@@ -12,7 +12,7 @@
     <p>Use chrome's F12 to resize screen and show mobile effect.</p>
     <p>Change <code>limitBy</code> to other number if you want list different posts </p>
     <hr>
-    <div id="vuetable" class="gridContent">
+    <div id="wrapper" class="gridContent">
         <div v-for="newpost in newposts | limitBy 9 offSet">
             <img :src="newpost.image" :alt="newpost.head" class="one" width="100%">
 
@@ -21,7 +21,7 @@
             <span class="two"><small><i> {{newpost.author}} - </i></small> </span>
 
             <span class="three"> <small>{{newpost.date}} </small></span>
-            
+
             <p class="four">{{newpost.content}}</p>
         </div>
         <div>
@@ -35,7 +35,7 @@
         </div>
     </div>
     <script src="vue1.js"></script>
-    <script src="posts.js"></script>
+    <script src="computed.js"></script>
 </body>
 
 </html>
