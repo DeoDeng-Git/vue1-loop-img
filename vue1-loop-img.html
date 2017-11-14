@@ -14,15 +14,19 @@
     <hr>
     <div id="wrapper" class="gridContent">
         <div v-for="newpost in newposts | limitBy 9 offSet">
-            <img :src="newpost.image" :alt="newpost.head" class="one" width="100%">
+            <img :src="newpost.image" :alt="newpost.head" width="100%">
 
-            <h4 class="onet"><a :href="newpost.link">{{newpost.head}}</a></h4>
+            <h4>
+                <a :href="newpost.link">{{ newpost.head }}</a>
+            </h4>
 
-            <span class="two"><small><i> {{newpost.author}} - </i></small> </span>
+            <span>
+                <small><i> {{ newpost.author }} - </i></small> 
+            </span>
 
-            <span class="three"> <small>{{newpost.date}} </small></span>
+            <span class="date"> <small>{{ newpost.date }} </small></span>
 
-            <p class="four">{{newpost.content}}</p>
+            <p>{{ newpost.content }}</p>
         </div>
         <div>
             <p>Read all the <a href="#">Posts</a>. </p>
